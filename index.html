@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--AOS cdn-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--font awsome links starts-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!--font awsome links ends-->
+
+    <!--css file links-->
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+
+</head>
+<body>
+<header>
+
+    <a href="#" class="logo">
+        <img src="./images/ajlogo.png">
+    </a>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="fas fa-bars"></label>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+<!--Home slider section starts-->
+
+<section class="homebg" id="homebg">
+
+    <div class="box" data-aos="fade-right" style="background: url(./images/ajbg.jpg) no-repeat;">
+    <div class="content" data-aos="fade-right">
+        <h3><span>Hello!</span> I am Ajay,
+            UI/UX Desginer &<br>  Developer based
+            in INDIA.</h3>
+        <p>See bits and pieces of his design work and prototyping on</p>
+    <div class="s-links" data-aos="fade-right">
+        <ul>
+            <li>Dribbble</li>
+            <li>Behance</li>
+            <li>Twitter</li>
+        </ul>
+    </div>
+    <div class="service" data-aos="fade-right">
+        <h4 class="heading" data-aos="fade-right">Service</h4>
+        <h5>UI/UX Interactive, Mobile App &<br>
+            Web Design</h5>
+    </div>
+    <div class="font-social" data-aos="fade-right">
+        <ul>
+            <li>
+                <i class="fa-brands fa-instagram"></i>
+            </li>
+            <li>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </li>
+            <li>
+                <i class="fa-brands fa-google"></i>
+            </li>
+        </ul>
+    </div>
+    </div>
+    
+    
+    
+    
+    </div>
+   
+</section>
+
+<!--Home slider section ends-->
+
+<!--clients section starts-->
+
+<section class="slider-client" id="slider-client">
+    <h3>My Client</h3>
+    <div class="swiper clinet-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <img src="./images/client1.png" alt=""></div>
+            <div class="swiper-slide slide">
+                <img src="./images/client2.png" alt=""></div>
+            <div class="swiper-slide slide">
+                <img src="./images/client3.png" alt=""></div>
+            <div class="swiper-slide slide">
+                <img src="./images/client4.png" alt=""></div>
+            
+        </div>
+       
+        
+    </div>
+</section>
+<!--clients section ends-->
+
+<!--bio section starts-->
+
+<section class="biography" id="biography">
+<h3 class="heading"data-aos="fade-right" >About me</h3>
+<div class="bio-first" data-aos="fade-right">
+   <h4>MY Biography</h4>
+   <div class="un-line" data-aos="fade-right"></div>
+   <p>
+    I'm a Ajay UI/UX Designer & Developer . I'm from Fresher and I am From India. I code and create web elements for amazing people around the world. I like work with new people. 
+    New people are new experiences.</p>
+</div>
+<div class="deatail-bio" data-aos="zoom-in-left">
+    <table>
+    <tbody>
+        <tr>
+            <td>NAME</td>
+            <th>AJay</th>
+        </tr>
+        <tr>
+            <td>BIRTHDAY</td>
+            <th>9 Nov</th>
+        </tr>
+        <tr>
+            <td>AGE</td>
+            <th>22</th>
+        </tr>
+        <tr>
+            <td>ADDRESS</td>
+            <th>Jaipur</th>
+        </tr>
+        <tr>
+            <td>PHONE</td>
+            <th>+917300149500</th>
+        </tr>
+        <tr>
+            <td>EMAIL</td>
+            <th>imajayjangid09@gmail.com</th>
+        </tr>
+       
+       
+    </table>
+</tbody>
+</div>
+
+</section>
+
+<!--bio section ends-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+</body>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 900,
+    });
+
+  </script>
+<script>
+    var swiper = new Swiper(".clinet-slider", {
+        loop: true,
+       grabCursor:true,
+       spaceBetween:20,
+        Breakpoints: {
+            0:{
+                slidesPerview: 1,
+            },
+            640:{
+                slidesPerview: 2,
+            },
+            768:{
+                slidesPerview: 3,
+            },
+            1024:{
+                slidesPerview: 4,
+            },
+            
+            
+        },
+       
+      });
+</script>
+</html>
